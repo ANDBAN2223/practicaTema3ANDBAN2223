@@ -42,7 +42,7 @@ namespace practicaGitHub2023
             //Si el telegrama es ordinario
             if (tipoTelegrama == 'o')
                 if (numPalabras <= 10)
-                    coste = 2.5;
+                    coste = 2.6;
                 else
                     coste = 2.5 + 0.5 * (numPalabras - 10);
             //Si el telegrama es urgente
