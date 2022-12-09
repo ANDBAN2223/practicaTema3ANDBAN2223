@@ -30,10 +30,11 @@
         {
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.cbUrgente = new System.Windows.Forms.CheckBox();
             this.txtTelegrama = new System.Windows.Forms.TextBox();
             this.txtPrecio = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
+            this.rOrdinario = new System.Windows.Forms.RadioButton();
+            this.rUrgente = new System.Windows.Forms.RadioButton();
             this.SuspendLayout();
             // 
             // label1
@@ -55,17 +56,6 @@
             this.label2.Size = new System.Drawing.Size(64, 20);
             this.label2.TabIndex = 1;
             this.label2.Text = "Coste:";
-            // 
-            // cbUrgente
-            // 
-            this.cbUrgente.AutoSize = true;
-            this.cbUrgente.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cbUrgente.Location = new System.Drawing.Point(82, 253);
-            this.cbUrgente.Name = "cbUrgente";
-            this.cbUrgente.Size = new System.Drawing.Size(107, 24);
-            this.cbUrgente.TabIndex = 2;
-            this.cbUrgente.Text = "Urgente?";
-            this.cbUrgente.UseVisualStyleBackColor = true;
             // 
             // txtTelegrama
             // 
@@ -93,15 +83,39 @@
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
+            // rOrdinario
+            // 
+            this.rOrdinario.AutoSize = true;
+            this.rOrdinario.Checked = true;
+            this.rOrdinario.Location = new System.Drawing.Point(82, 256);
+            this.rOrdinario.Name = "rOrdinario";
+            this.rOrdinario.Size = new System.Drawing.Size(83, 20);
+            this.rOrdinario.TabIndex = 6;
+            this.rOrdinario.TabStop = true;
+            this.rOrdinario.Text = "Ordinario";
+            this.rOrdinario.UseVisualStyleBackColor = true;
+            // 
+            // rUrgente
+            // 
+            this.rUrgente.AutoSize = true;
+            this.rUrgente.Location = new System.Drawing.Point(205, 255);
+            this.rUrgente.Name = "rUrgente";
+            this.rUrgente.Size = new System.Drawing.Size(76, 20);
+            this.rUrgente.TabIndex = 7;
+            this.rUrgente.TabStop = true;
+            this.rUrgente.Text = "Urgente";
+            this.rUrgente.UseVisualStyleBackColor = true;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.rUrgente);
+            this.Controls.Add(this.rOrdinario);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.txtPrecio);
             this.Controls.Add(this.txtTelegrama);
-            this.Controls.Add(this.cbUrgente);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Name = "Form1";
@@ -115,10 +129,11 @@
 
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.CheckBox cbUrgente;
         private System.Windows.Forms.TextBox txtTelegrama;
         private System.Windows.Forms.TextBox txtPrecio;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.RadioButton rOrdinario;
+        private System.Windows.Forms.RadioButton rUrgente;
     }
 }
 

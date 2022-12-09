@@ -26,7 +26,7 @@ namespace practicaGitHub2023
             //Leo el telegrama
             textoTelegrama = txtTelegrama.Text;
             // telegrama urgente?
-            if (cbUrgente.Checked)
+            if (rUrgente.Checked)
                 tipoTelegrama = 'u';
             //Obtengo el número de palabras que forma el telegrama
             int numCaracteres = textoTelegrama.Length;
